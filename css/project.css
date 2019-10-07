@@ -43,6 +43,11 @@
   font-size: 60px;
 }
 
+.slideshow img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-height: 450px) {
   .slideshow a {
     font-size: 20px;
