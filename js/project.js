@@ -1,3 +1,11 @@
+  window.onload = function () {
+      document.getElementById("showallbtn").click();
+  };
+
+  function doSomething() {
+      alert("Click!")
+  }
+
   function openNavMGSF() {
       document.getElementById("myNavMGSF").style.width = "100%";
   }

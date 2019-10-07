@@ -24,9 +24,13 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/filterportfolio.css">
 </head>
 
 <script src="js/project.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/filterportfolio.js"></script>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap">
@@ -90,7 +94,8 @@
           <div class="col-md-8 align-self-center">
             <div class="intro">
               <div class="heading">
-                <h1>Jayden Hsiao</h1>
+                <h1>Jayden</h1>
+                <h1>Hsiao</h1>
               </div>
               <div class="text">
                 <p class="sub-text mb-5">I am an enthusiastic student with strong leadership and organizational skills
@@ -481,60 +486,18 @@
         <div class="row mb-5">
           <div class="col-lg-6 section-title">
             <span class="sub-title mb-2 d-block">My Projects</span>
-            <!-- <h2 class="title text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2> -->
           </div>
+        </div>
+        <div id="myBtnContainer">
+          <button id="showallbtn" class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('graphicdesign')"> Graphic Design</button>
+          <button class="btn" onclick="filterSelection('uxui')"> UX/UI</button>
+          <button class="btn" onclick="filterSelection('photography')"> Photography</button>
         </div>
         <div class="row">
           <div class="col-lg-12 ml-auto">
             <div class="row">
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <img style="width: 18rem; object-fit:cover;" src="images/sc_semi_poster2.jpg">
-                  </img>
-                  <span class="display-4 text-primary d-block mb-4"></span>
-                  <h3>Mardi Gras Semi-Formal</h3>
-                  <p>Designed the promotional posters, social media posts, and tickets for the 2019 Brantford Collegiate
-                    Institute Semi-Formal</p>
-                  <p><a style="color: #007bff" class="readmore" onclick="openNavMGSF()">Learn more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <img style="width: 18rem; object-fit:cover;" src="images/crosscuts_design.png">
-                  </img>
-                  <span class="display-4 text-primary d-block mb-4"></span>
-                  <h3>Cross Cuts Festival</h3>
-                  <p>Created posters for the board-wide contest and submitted several winning photographic entries
-                    within it
-                  </p>
-                  <p><a style="color: #007bff" class="readmore" onclick="openNavCCF()">Learn more</a>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <img style="width: 18rem; object-fit:cover;" src="images/yar_poster.png">
-                  </img>
-                  <span class="display-4 text-primary d-block mb-4"></span>
-                  <h3>Young Artists' Recital</h3>
-                  <p>Developed engaging marketing campaigns for the local festival and performed within it as well</p>
-                  <p><a style="color: #007bff" class="readmore" onclick="openNavYAR()">Learn more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <img style="width: 18rem; object-fit:cover;" src="images/sc_holidays_poster1.png">
-                  </img>
-                  <span class="display-4 text-primary d-block mb-4"></span>
-                  <h3>HoliDays and Spirit Weeks</h3>
-                  <p>Implemented seasonal spirit weeks within my high school and curated engaging posters for these
-                    events to foster a more relaxed and welcoming atmosphere within my school.</p>
-                  <p><a style="color: #007bff" class="readmore" onclick="openNavHDSW()">Learn more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column uxui">
                 <div class="service h-100">
                   <img style="width: 18rem; object-fit:cover;" src="images/dailyui_invoice.jpg">
                   </img>
@@ -546,7 +509,42 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign">
+                <div class="service h-100">
+                  <img style="width: 18rem; object-fit:cover;" src="images/cs_sc_thumbnail.png">
+                  </img>
+                  <span class="display-4 text-primary d-block mb-4"></span>
+                  <h3>BCI Student Council</h3>
+                  <p>Designed social media campaigns to be used by the Brantford Collegiate Institute Student Council
+                    to increase attendance at their events and engage their students</p>
+                  <p><a style="color: #007bff" class="readmore" href="studentcouncil.html">Learn more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign photography">
+                <div class="service h-100">
+                  <img style="width: 18rem; object-fit:cover;" src="images/crosscuts_design.png">
+                  </img>
+                  <span class="display-4 text-primary d-block mb-4"></span>
+                  <h3>Cross Cuts Festival</h3>
+                  <p>Created posters for the board-wide contest and submitted several winning photographic entries
+                    within it
+                  </p>
+                  <p><a style="color: #007bff" class="readmore" onclick="openNavCCF()">Learn more</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign">
+                <div class="service h-100">
+                  <img style="width: 18rem; object-fit:cover;" src="images/yar_poster.png">
+                  </img>
+                  <span class="display-4 text-primary d-block mb-4"></span>
+                  <h3>Young Artists' Recital</h3>
+                  <p>Developed engaging marketing campaigns for the local festival and performed within it as well</p>
+                  <p><a style="color: #007bff" class="readmore" onclick="openNavYAR()">Learn more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign">
                 <div class="service h-100">
                   <img style="width: 18rem; object-fit:cover;" src="images/thinkingplayground_logocropped_jpg.png">
                   </img>
@@ -558,7 +556,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign photography">
                 <div class="service h-100">
                   <img style="width: 18rem; object-fit:cover;" src="images/yearbook_2018-2019_covercropped.png">
                   </img>
@@ -570,19 +568,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <img style="width: 18rem; object-fit:cover;" src="images/sc_homecoming_poster.png">
-                  </img>
-                  <span class="display-4 text-primary d-block mb-4"></span>
-                  <h3>Homecoming and Mustang Day</h3>
-                  <p>Designed posters, geofilters, social media campaigns, and tickets for two of the largest traditions
-                    at my high school</p>
-                  <p><a style="color: #007bff" class="readmore" onclick="openNavHMD()">Learn more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign">
                 <div class="service h-100">
                   <img style="width: 18rem; object-fit:cover;" src="images/majorleaguehackinghackday_poster.png">
                   </img>
@@ -595,7 +581,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column photography">
                 <div class="service h-100">
                   <img style="width: 18rem; object-fit:cover;" src="images/jostens_photo (4).jpg">
                   </img>
@@ -608,7 +594,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 column graphicdesign">
                 <div class="service h-100">
                   <img style="width: 18rem; object-fit:cover;" src="images/heros_poster.png">
                   </img>
@@ -619,16 +605,6 @@
                   <p><a style="color: #007bff" class="readmore" onclick="openNavHEROS()">Learn
                       more</a>
                   </p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                <div class="service h-100">
-                  <img style="width: 18rem; object-fit:cover;" src="images/sc_barbecueposter.jpg">
-                  </img>
-                  <span class="display-4 text-primary d-block mb-4"></span>
-                  <h3>Barbecues, Fundraisers, Apparel, and More!</h3>
-                  <p>Designed promotional materials for a wide variety of school events and clubs</p>
-                  <p><a style="color: #007bff" class="readmore" onclick="openNavBFAM()">Learn more</a></p>
                 </div>
               </div>
             </div>
