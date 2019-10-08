@@ -32,6 +32,47 @@
   height: auto;
 }
 
+.casestudy .container {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  width: 420px;
+  height: 160px;
+  margin-bottom: 12vh;
+}
+
+.casestudy .container span {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #78ccd2;
+  color: #186c72;
+  border-radius: 4px;
+  margin: 3px;
+  cursor: default;
+}
+
+.casestudy .container span::before {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  width: 100%;
+  content: attr(data-title);
+  color: #666;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.casestudy .container span:hover::before {
+  opacity: 1;
+}
+
+.casestudy .results img {
+  margin-bottom: 1.5vw;
+}
+
 .casestudy .sub-title {
   font-size: 1.5rem;
   text-transform: uppercase;
