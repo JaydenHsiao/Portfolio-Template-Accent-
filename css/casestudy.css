@@ -1,17 +1,29 @@
 .casestudy h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   margin: 15vw, 0, 3vw, 0;
   margin-top: 5vw;
 }
 
 .casestudy h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: lighter;
   margin: 0, 0, 3vw, 0;
 }
 
+.casestudy .sub-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  color: #0056b3;
+  margin: 2vw, 0, 3vw, 0;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+
 .casestudy h3 {
+  font-size: 1.8rem;
   margin: 0, 0, 1vw, 0;
 }
 
@@ -22,6 +34,7 @@
 }
 
 .casestudy p {
+  font-size: 1.1rem;
   color: black;
 }
 
@@ -30,6 +43,7 @@
   display: block;
   width: 80%;
   height: auto;
+  background-size: contain;
 }
 
 .casestudy .container {
@@ -71,15 +85,4 @@
 
 .casestudy .results img {
   margin-bottom: 1.5vw;
-}
-
-.casestudy .sub-title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-weight: 600;
-  color: #0056b3;
-  margin: 2vw, 0, 3vw, 0;
-  margin-top: 3vw;
-  margin-bottom: 2vw;
 }
